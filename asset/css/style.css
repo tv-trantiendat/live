@@ -90,14 +90,10 @@ p:hover {
 
 .tile img {
 
-      border: 2px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 7%;
   padding: 10px;
-  width: 55%;
-
-
-    margin-bottom: 1rem;
-
+  width: 80%;
 }
 
 .btn {
