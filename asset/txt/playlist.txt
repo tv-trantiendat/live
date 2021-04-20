@@ -1,0 +1,13 @@
+[{"title":"Bến Xưa Ví Dặm Tìm Về - Thanh Tài","file":"https://youtu.be/eKsbwDto0E0"},
+
+{"title":"Lỡ Hẹn Với Dòng Lam - Thanh Tài","file":"https://youtu.be/mmLb6WxIch0"},
+
+{"title":"Bài Ca Thống Nhất - Bùi Thúy ft Trang Dung","file":"https://youtu.be/6KuXsmUet0M"},
+
+{"title":"Em Vẫn Chờ Anh - Thanh Tài ft Như Quỳnh","file":"https://youtu.be/PkvXHiZJxIA"},
+
+{"title":"Lỡ Hẹn Với Dòng Lam - Thanh Tài","file":"https://youtu.be/mmLb6WxIch0"},
+
+{"title":"Nghệ Tĩnh Mình Đây - Trọng Hoàng ft Như Quỳnh","file":"https://youtu.be/x3m_0DmC0Uk"},
+
+{"title":"Hà Tĩnh Quê Mình - Hà Quỳnh Như","file":"https://youtu.be/VqSzvPxZdHM"}]
