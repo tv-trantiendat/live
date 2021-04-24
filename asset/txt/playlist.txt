@@ -1,4 +1,6 @@
-[{"title":"Bến Xưa Ví Dặm Tìm Về - Thanh Tài","file":"https://youtu.be/eKsbwDto0E0"},
+[{"title":"Ví Dặm Một Mùa Trăng - Thanh Tài ft Thanh Quý","file":"https://youtu.be/L-taRc4CVjY"},
+
+{"title":"Bến Xưa Ví Dặm Tìm Về - Thanh Tài","file":"https://youtu.be/eKsbwDto0E0"},
 
 {"title":"Lỡ Hẹn Với Dòng Lam - Thanh Tài","file":"https://youtu.be/mmLb6WxIch0"},
 
@@ -6,7 +8,7 @@
 
 {"title":"Em Vẫn Chờ Anh - Thanh Tài ft Như Quỳnh","file":"https://youtu.be/PkvXHiZJxIA"},
 
-{"title":"Lỡ Hẹn Với Dòng Lam - Thanh Tài","file":"https://youtu.be/mmLb6WxIch0"},
+{"title":"Về Quảng Bình - Thanh Tài","file":"https://youtu.be/7roxc_fnX34"},
 
 {"title":"Nghệ Tĩnh Mình Đây - Trọng Hoàng ft Như Quỳnh","file":"https://youtu.be/x3m_0DmC0Uk"},
 
