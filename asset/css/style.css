@@ -164,21 +164,19 @@ p:hover {
 
 }
 
-.tcenter{
+.tcenter .toolbar{
+
 
   text-align: center;
 
 }
 
 
-.toolbar .btn fil-cat{
+.toolbar{
 
   position: fixed;
   bottom: 0;
   left:0;
-  
-  text-align: center;
-
 }
 
 .top{
