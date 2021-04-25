@@ -5,7 +5,9 @@
 }
 
 body{
+  
 background-color:#000;
+  
   max-width: 900px;
 
   float: none;
@@ -18,7 +20,7 @@ background-color:#000;
 
 #portfolio {
 
-    position: absolute;
+    position: fixed;
 
     bottom: 0;
 
