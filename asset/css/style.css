@@ -112,7 +112,9 @@ p:hover {
 .btn {
 
     
-
+position: absolute ;
+  top: 70%;
+  left:30%;
     font-size: 1rem;
 
     font-weight: normal;
