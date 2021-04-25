@@ -164,8 +164,19 @@ p:hover {
 
 }
 
-.tcenter, .toolbar{
+.tcenter{
 
+  text-align: center;
+
+}
+
+
+.toolbar{
+
+  position: fixed;
+  bottom: 0;
+  left:0;
+  
   text-align: center;
 
 }
