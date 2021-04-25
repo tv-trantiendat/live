@@ -98,7 +98,7 @@ p:hover {
 
 .tile img {
   
-  position: fixed;
+  position: absolute;
 
   border: 1px solid #ddd;
   
