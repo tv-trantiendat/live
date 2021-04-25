@@ -18,6 +18,13 @@ background-color:#000;
 
 #portfolio {
 
+    position: fixed;
+
+    bottom: 0;
+
+
+    left:0;
+  
     margin: 1rem 0;
 
     -webkit-column-count: 3; 
@@ -172,7 +179,7 @@ p:hover {
 }
 
 
-.toolbar .portfolio{
+.toolbar{
 
   position: fixed;
   bottom: 0;
