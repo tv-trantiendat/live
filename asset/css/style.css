@@ -115,46 +115,7 @@ p:hover {
 position: absolute ;
   bottom: 55%;
   left:0%;
-    font-size: 1rem;
-
-    font-weight: normal;
-
-    text-decoration: none;
-
-    cursor: pointer;
-
-    display: inline-block;
-
-    line-height: normal;
-
-    padding: .5rem 1rem;
-
-    margin: 0;
-
-    height: auto;
-
-    border: 1px solid #ccc;
-
-    vertical-align: middle;
-
-    -webkit-appearance: none;
-
-    color: #555;
-
-    background-color: rgba(0, 0, 0, 0);
-
-    border-radius: 3px;
-
-}
-
-.btn:hover {
-
-  text-decoration: none;
-
-  background: rgb(236, 76, 76);
-
-  color: #fff;
-
+    
 }
 
 ::-moz-focus-inner {
