@@ -113,8 +113,8 @@ p:hover {
 
     
 position: absolute ;
-  top: 70%;
-  left:30%;
+  bottom: 50%;
+  left:0%;
     font-size: 1rem;
 
     font-weight: normal;
@@ -173,21 +173,6 @@ position: absolute ;
 
   border: none
 
-}
-
-.tcenter .toolbar{
-
-
-  text-align: center;
-
-}
-
-
-.toolbar{
-
-  position: absolute ;
-  top: 70%;
-  left:30%;
 }
 
 .top{
