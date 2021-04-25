@@ -182,7 +182,15 @@ position: absolute ;
 
 }
 
+.toolbar{
+position: absolute ;
 
+  top: 70%;
+
+  left:30%;
+  text-align: center;
+
+}
 
 
 .top{
