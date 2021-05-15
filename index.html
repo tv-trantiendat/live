@@ -1,375 +1,550 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<title>Truyền Hình Trần Tiến Đạt</title>
-
-<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/live/asset/css/style.css">
-
-	
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script type='text/JavaScript'>
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ('return false')
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == 'IMG')
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+<link href='asset/css/styles.css' rel='stylesheet' type='text/css' />
+<link href='asset/css/style.css' rel='stylesheet' type='text/css' />
+</head>
 <body>
-
-				
-<iframe id="MPlayer" src="/live/channel/ttd/ttd1" style="position:fixed; top:0; left:0; width:100%; height:100%; border:none;"></iframe>
-	
-<!--<<div class="toolbar mb2 mt2">
-
-<button class="btn active" data-rel="0">TẤT CẢ</button>
-
-<button class="btn" data-rel="1">SỰ KIỆN</button>
-
-<button class="btn" data-rel="2">VTV</button>
-
-<button class="btn" data-rel="3">VTC</button>
-
-<button class="btn" data-rel="4">HTV</button>
-
-<button class="btn" data-rel="5">HTVC</button>
-
-<button class="btn" data-rel="6">ĐỊA PHƯƠNG</button>
-
-</div>-->
-
-<div style="clear:both;">
-
+  <div id='main'> 	
+<div class='container-iframe'>
+    <!--<iframe class='responsive-iframe' id='containerplayer' src='channel/ttd/ttd1' ></iframe>-->
+  <iframe class='responsive-iframe' id='containerplayer_v1_on'></iframe>
+    </div>
+    </div>
+    <!--
+value:document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'
+value:containerplayer()
+-->
+    <div class='main'>
+  <div  id='myBtnContainer'>
+  <button class='btn active' onclick='filterSelection('all')'>TẤT CẢ</button>
+  <button class='btn' onclick='filterSelection('vtv')'>VTV</button>
+  <button class='btn' onclick='filterSelection('vtc')'>VTC</button>
+  <button class='btn' onclick='filterSelection('htv')'>HTV</button>
+  <button class='btn' onclick='filterSelection('htvc')'>HTVC</button>
+  <button class='btn' onclick='filterSelection('dp')'>ĐỊA PHƯƠNG</button>
 </div>
 
+<!-- Portfolio Gallery Grid -->
+<div class='row'>
+  <div class='column vtv'>
+    <div class='content'>
+  <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/vtv/vtv1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv1.jpg' alt='vtv1'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/vtv/vtv2'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv2.jpg' alt='vtv2'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/vtv/vtv3'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv3.jpg' alt='vtv3'>
+    </div>
+  </div>
+  
+  <div class='column vtv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv4.jpg' alt='vtv4'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv5.jpg' alt='vtv5'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv6.jpg' alt='vtv6'>
+       </div>
+  </div>
 
-	<div id="portfolio">
-<div class="tile scale-anm 0 1">
+  <div class='column vtv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv7.jpg' alt='vtv7'>
+        </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv8.jpg' alt='vtv8'>
+       </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv9.jpg' alt='vtv9'>
+      </div>
+  </div>
+   <div class='column vtc'>
+    <div class='content'>
+              <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc1.jpg' alt='vtc1'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc2.jpg' alt='vtc2'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc3.jpg' alt='vtc3'>
+    </div>
+  </div>
+  
+  <div class='column vtc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc4.jpg' alt='vtc4'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc5.jpg' alt='vtc5'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc6.jpg' alt='vtc6'>
+       </div>
+  </div>
 
-<img onclick="document.getElementById('MPlayer').src='/live/channel/ttd/ttd1'" src="https://on-trantiendat.shortcm.li/logo_ttd.truyenhinh" alt="" />
+  <div class='column vtc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc7.jpg' alt='vtc7'>
+        </div>
+  </div>
+  <div class='column vtc8'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc8.jpg' alt='vtc8'>
+       </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc9.jpg' alt='vtc9'>
+      </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+  <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc10.jpg' alt='vtc10'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc11.jpg' alt='vtc11'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc12.jpg' alt='vtc12'>
+    </div>
+  </div>
+  
+  <div class='column vtc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc14.jpg' alt='vtc14'>
+    </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv1.jpg' alt='htv1'>
+    </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv2.jpg' alt='htv2'>
+       </div>
+  </div>
 
+  <div class='column htv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv3.jpg' alt='htv3'>
+        </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv4.jpg' alt='htv4'>
+       </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv7.jpg' alt='htv7'>
+      </div>
+  </div>
+   <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv9.jpg' alt='htv9'>
+    </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvthethao.jpg' alt='htvthethao'>
+    </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcphunu.jpg' alt='htvcphunu'>
+    </div>
+  </div>
+  
+  <div class='column htv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvco.jpg' alt='htvco'>
+    </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcdulichvacuocsong.jpg' alt='htvcdulichvacuocsong'>
+    </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcphim.jpg' alt='htvcphim'>
+       </div>
+  </div>
+
+  <div class='column htvc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcplus.jpg' alt='htvcplus'>
+        </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcmuasam.jpg' alt='htvcmuasam'>
+       </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcgiadinh.jpg' alt='htvcgiadinh'>
+      </div>
 </div>
-
-	<div class="tile scale-anm 0 1">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/ttd/ttd1'" src="https://on-trantiendat.shortcm.li/logo_ttd.truyenhinh" alt="" />
-
+  <div class='column htvc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvccanhac.jpg' alt='htvccanhac'>
+        </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcfbnc.jpg' alt='htvcfbnc'>
+       </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcthuanvietsd.jpg' alt='htvcthuanvietsd'>
+      </div>
 </div>
-		
-<div class="tile scale-anm 0 1">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/ttd/ttd1'" src="https://on-trantiendat.shortcm.li/logo_ttd.truyenhinh" alt="" />
-
+  <div class='column htvc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcthuanviethd.jpg' alt='htvcthuanviethd'>
+        </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcmuasam.jpg' alt='htvcmuasam'>
+       </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcgiadinh.jpg' alt='htvcgiadinh'>
+      </div>
 </div>
-	
-<div class="tile scale-anm 0 2">
+  <div class='column vtv'>
+    <div class='content'>
+  <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/vtv/vtv1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv1.jpg' alt='vtv1'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/vtv/vtv2'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv2.jpg' alt='vtv2'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/vtv/vtv3'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv3.jpg' alt='vtv3'>
+    </div>
+  </div>
+  
+  <div class='column vtv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv4.jpg' alt='vtv4'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv5.jpg' alt='vtv5'>
+    </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv6.jpg' alt='vtv6'>
+       </div>
+  </div>
 
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv1'" src="https://on-trantiendat.shortcm.li/logo_vtv1.truyenhinh" alt="" />
+  <div class='column vtv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv7.jpg' alt='vtv7'>
+        </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv8.jpg' alt='vtv8'>
+       </div>
+  </div>
+  <div class='column vtv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtv9.jpg' alt='vtv9'>
+      </div>
+  </div>
+   <div class='column vtc'>
+    <div class='content'>
+              <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc1.jpg' alt='vtc1'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc2.jpg' alt='vtc2'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc3.jpg' alt='vtc3'>
+    </div>
+  </div>
+  
+  <div class='column vtc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc4.jpg' alt='vtc4'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc5.jpg' alt='vtc5'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc6.jpg' alt='vtc6'>
+       </div>
+  </div>
 
+  <div class='column vtc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc7.jpg' alt='vtc7'>
+        </div>
+  </div>
+  <div class='column vtc8'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc8.jpg' alt='vtc8'>
+       </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc9.jpg' alt='vtc9'>
+      </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+  <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc10.jpg' alt='vtc10'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc11.jpg' alt='vtc11'>
+    </div>
+  </div>
+  <div class='column vtc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc12.jpg' alt='vtc12'>
+    </div>
+  </div>
+  
+  <div class='column vtc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/vtc14.jpg' alt='vtc14'>
+    </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv1.jpg' alt='htv1'>
+    </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv2.jpg' alt='htv2'>
+       </div>
+  </div>
+
+  <div class='column htv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv3.jpg' alt='htv3'>
+        </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv4.jpg' alt='htv4'>
+       </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv7.jpg' alt='htv7'>
+      </div>
+  </div>
+   <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htv9.jpg' alt='htv9'>
+    </div>
+  </div>
+  <div class='column htv'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvthethao.jpg' alt='htvthethao'>
+    </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcphunu.jpg' alt='htvcphunu'>
+    </div>
+  </div>
+  
+  <div class='column htv'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvco.jpg' alt='htvco'>
+    </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcdulichvacuocsong.jpg' alt='htvcdulichvacuocsong'>
+    </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcphim.jpg' alt='htvcphim'>
+       </div>
+  </div>
+
+  <div class='column htvc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcplus.jpg' alt='htvcplus'>
+        </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcmuasam.jpg' alt='htvcmuasam'>
+       </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcgiadinh.jpg' alt='htvcgiadinh'>
+      </div>
 </div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv4'" src="https://on-trantiendat.shortcm.li/logo_vtv4.truyenhinh" alt="" />
-
+  <div class='column htvc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvccanhac.jpg' alt='htvccanhac'>
+        </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcfbnc.jpg' alt='htvcfbnc'>
+       </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcthuanvietsd.jpg' alt='htvcthuanvietsd'>
+      </div>
 </div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv7'" src="https://on-trantiendat.shortcm.li/logo_vtv7.truyenhinh" alt="" />
-
+  <div class='column htvc'>
+    <div class='content'>
+      <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcthuanviethd.jpg' alt='htvcthuanviethd'>
+        </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcmuasam.jpg' alt='htvcmuasam'>
+       </div>
+  </div>
+  <div class='column htvc'>
+    <div class='content'>
+    <img class='img' onclick='document.getElementById('containerplayer_v1_on').src='channel/ttd/ttd1'' onclick='containerplayer_v2_on()' src='asset/upload/img/htvcgiadinh.jpg' alt='htvcgiadinh'>
+      </div>
 </div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv2'" src="https://on-trantiendat.shortcm.li/logo_vtv2.truyenhinh" alt="" />
-
+<!-- END MAIN -->
 </div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div><div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv5'" src="https://on-trantiendat.shortcm.li/logo_vtv5.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv8'" src="https://on-trantiendat.shortcm.li/logo_vtv8.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv3'" src="https://on-trantiendat.shortcm.li/logo_vtv3.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv6'" src="https://on-trantiendat.shortcm.li/logo_vtv6.truyenhinh" alt="" />
-
-</div>
-
-<div class="tile scale-anm 0 2">
-
-<img onclick="document.getElementById('MPlayer').src='/live/channel/vtv/vtv9'" src="https://on-trantiendat.shortcm.li/logo_vtv9.truyenhinh" alt="" />
-
-</div>
-
-</div>
-
-<div style="clear:both;">
-
-</div>
-
-<script src="/live/asset/js/jquery-3.4.1.min.js" type="text/javascript">
-
+<!--
+<button type='button' id='button_id' onClick='LogIn()'>Đăng nhập</button>
+<script src='https://cdn-trantiendat.github.io/login/asset/js/script.js'></script>
+<script> 												
+function myFunction() { 	
+document.getElementById('button_id').value = 'Clicked'; 	
+} 
+setInterval(function(){ document.getElementById('button_id').click();	 }, 2000); 
+</script>-->
+<script>
+function containerplayer_v2_off() {
+  alert('HỆ THỐNG CHÚNG TÔI ĐANG GẶP SỰ CỐ TẠI SERVER (MÁY CHỦ) THUỘC BỞI TRUNG TÂM DỮ LIỆU TRẦN TIẾN ĐẠT IDC. HIỆN TẠI ĐỘI NGŨ KỸ THUẬT GỒM: ĐỘI XỬ LÝ SỰ CỐ CỦA TRUYỀN HÌNH TRẦN TIẾN ĐẠT; PHÒNG QUẢN LÝ MÁY CHỦ CỦA TRUNG TÂM DỮ LIỆU TRẦN TIẾN ĐẠT IDC; CÁC ĐƠN VỊ LIÊN QUAN VÀ MỘT SỐ CÁN BỘ ĐIỀU HÀNH ĐANG XỬ LÝ 24/24H. DỰ KIẾN HOÀN THIỆN SỰ CỐ 00H00 NGÀY 16/05/2021. QUÝ KHÁCH CÓ THỂ TRUY CẬP VÀO WEBSITE DỰ PHÒNG CỦA ĐƠN VỊ: www.tv.trantiendat.com.vn ĐỂ XEM NỘI DUNG. MỌI CHI TIẾT XIN LIÊN HỆ VỀ TRUNG TÂM CHĂM SÓC KHÁCH HÀNG QUA SĐT: 02323515302 HOẶC EMAIL: cskh@truyenhinh.trantiendat.com.vn. TRÂN TRỌNG!');
+/*window.location='https://cdn-trantiendat.github.io/login';*/
+}
 </script>
+<script>
+filterSelection('all')
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName('column');
+  if (c == 'all') c = '';
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], 'show');
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], 'show');
+  }
+}
 
-<script src="/live/asset/js/script.js" type="text/javascript">
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(' ');
+  arr2 = name.split(' ');
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += ' ' + arr2[i];}
+  }
+}
 
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(' ');
+  arr2 = name.split(' ');
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(' ');
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById('myBtnContainer');
+var btns = btnContainer.getElementsByClassName('btn');
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', function(){
+    var current = document.getElementsByClassName('active');
+    current[0].className = current[0].className.replace(' active', '');
+    this.className += ' active';
+  });
+}
 </script>
-
 </body>
-
-</html> 
+</iframe src='https://cdn-trantiendat.github.io/login' style='visibility: hidden'></iframe>
+</html>
